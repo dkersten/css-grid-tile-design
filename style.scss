@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,7 +57,9 @@ $color-blue-pale: #778ca3;
 $color-teal-dark: #0fb9b1;
 $color-blue-dark: #4b6584;
 $color-blue-light: #badbff;
-$color-cream: #fffcfb;
+$color-cream: #E9E7DC;
+$color-off-white: #E6F4F1;
+$color-dark-grey: #0c1124;
 
 // styles
 
@@ -63,10 +67,12 @@ $color-cream: #fffcfb;
     min-height: 100vh;
     min-width: 100vw;
     background: $color-cream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
-    background: red;
     width: 98%;
     max-width: 1200px;
     min-height: 700px;
@@ -78,12 +84,37 @@ main {
     grid-template-rows: 10px 1fr 1fr 1fr 10px;
 }
 
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    * {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $color-off-white;
+        text-shadow: 0 0 5px $color-dark-grey;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: .5px;
+    }
+}
+
 .card-1 {
-    background: $color-teal-dark;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+    background: $color-blue-light;
+    color: $color-dark-grey;
+    text-shadow: 0 0 3px $color-off-white;
 }
 
 .card-2 {
@@ -92,10 +123,12 @@ main {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    color: $color-dark-grey;
+    text-shadow: 0 0 3px $color-off-white;
 }
 
 .card-3 {
-    background: $color-blue-pale;
+    background: $color-blue-dark;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 3;
@@ -103,17 +136,21 @@ main {
 }
 
 .card-4 {
-    background: $color-blue-light;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
+    background: $color-teal-dark;
+    color: $color-dark-grey;
+    text-shadow: 0 0 3px $color-off-white;
 }
 
 .card-5 {
-    background: $color-blue-dark;
+    background: $color-blue-pale;
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 5;
+    color: $color-off-white;
+    text-shadow: 0 0 3px $color-dark-grey;
 }

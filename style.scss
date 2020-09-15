@@ -78,3 +78,42 @@ main {
     grid-template-rows: 10px 1fr 1fr 1fr 10px;
 }
 
+.card-1 {
+    background: $color-teal-dark;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.card-2 {
+    background: $color-teal-light;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.card-3 {
+    background: $color-blue-pale;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.card-4 {
+    background: $color-blue-light;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.card-5 {
+    background: $color-blue-dark;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}

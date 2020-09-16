@@ -221,4 +221,10 @@ main {
   background: -webkit-gradient(linear, left top, right bottom, from(#4b6584), to(#0fb9b1));
   background: linear-gradient(to bottom right, #4b6584, #0fb9b1);
 }
+
+.overlay button {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -201,3 +201,9 @@ main {
     width: 100vw;
     background: linear-gradient(to bottom right, $color-blue-dark, $color-teal-dark)
 }
+
+.overlay button {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+}

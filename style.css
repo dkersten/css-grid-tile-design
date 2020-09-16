@@ -112,10 +112,22 @@ main {
   letter-spacing: .5px;
 }
 
-.card a {
+.card button {
   position: absolute;
+  font-size: 1.1rem;
   right: 20px;
   bottom: 15px;
+  background: none;
+  border: none;
+}
+
+.card button:hover {
+  cursor: pointer;
+}
+
+.card button:focus, .card button:active, .card button:hover {
+  border: none;
+  outline: none;
 }
 
 .card-1 {
@@ -126,6 +138,9 @@ main {
       grid-row-start: 3;
   grid-row-end: 4;
   background: #badbff;
+}
+
+.card-1 * {
   color: #0c1124;
   text-shadow: 0 0 3px #E6F4F1;
 }
@@ -138,6 +153,9 @@ main {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
+}
+
+.card-2 * {
   color: #0c1124;
   text-shadow: 0 0 3px #E6F4F1;
 }
@@ -160,6 +178,9 @@ main {
       grid-row-start: 4;
   grid-row-end: 5;
   background: #0fb9b1;
+}
+
+.card-4 * {
   color: #0c1124;
   text-shadow: 0 0 3px #E6F4F1;
 }
@@ -172,7 +193,32 @@ main {
   -ms-grid-row: 4;
       grid-row-start: 4;
   grid-row-end: 5;
+}
+
+.card-5 * {
   color: #E6F4F1;
   text-shadow: 0 0 3px #0c1124;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay.shown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, right bottom, from(#4b6584), to(#0fb9b1));
+  background: linear-gradient(to bottom right, #4b6584, #0fb9b1);
 }
 /*# sourceMappingURL=style.css.map */

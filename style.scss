@@ -107,10 +107,22 @@ main {
         letter-spacing: .5px;
     }
 
-    a {
+    button {
         position: absolute;
+        font-size: 1.1rem;
         right: 20px;
         bottom: 15px;
+        background: none;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus, &:active, &:hover {
+            border: none;
+            outline: none;
+        }
     }
 }
 
@@ -120,8 +132,11 @@ main {
     grid-row-start: 3;
     grid-row-end: 4;
     background: $color-blue-light;
-    color: $color-dark-grey;
-    text-shadow: 0 0 3px $color-off-white;
+
+    * {
+        color: $color-dark-grey;
+        text-shadow: 0 0 3px $color-off-white;
+    }
 }
 
 .card-2 {
@@ -130,8 +145,11 @@ main {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    color: $color-dark-grey;
-    text-shadow: 0 0 3px $color-off-white;
+
+    * {
+        color: $color-dark-grey;
+        text-shadow: 0 0 3px $color-off-white;
+    }
 }
 
 .card-3 {
@@ -148,8 +166,12 @@ main {
     grid-row-start: 4;
     grid-row-end: 5;
     background: $color-teal-dark;
-    color: $color-dark-grey;
-    text-shadow: 0 0 3px $color-off-white;
+
+    * {
+
+        color: $color-dark-grey;
+        text-shadow: 0 0 3px $color-off-white;
+    }
 }
 
 .card-5 {
@@ -158,6 +180,24 @@ main {
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 5;
-    color: $color-off-white;
-    text-shadow: 0 0 3px $color-dark-grey;
+
+    * {
+        color: $color-off-white;
+        text-shadow: 0 0 3px $color-dark-grey;
+    }
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+.overlay.shown {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom right, $color-blue-dark, $color-teal-dark)
 }

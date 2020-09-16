@@ -92,6 +92,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .card * {
@@ -109,6 +110,12 @@ main {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: .5px;
+}
+
+.card a {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
 }
 
 .card-1 {

@@ -88,6 +88,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     * {
         font-family: 'Source Sans Pro', sans-serif;
@@ -104,6 +105,12 @@ main {
         font-size: 1.5rem;
         font-weight: 600;
         letter-spacing: .5px;
+    }
+
+    a {
+        position: absolute;
+        right: 20px;
+        bottom: 15px;
     }
 }
 

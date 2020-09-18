@@ -93,10 +93,12 @@ main {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding: 1rem;
 }
 
 .card * {
   font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
 }
 
 .card h1 {
@@ -226,5 +228,105 @@ main {
   position: fixed;
   top: 15px;
   right: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    -ms-grid-columns: 10px 1fr 1fr 10px;
+        grid-template-columns: 10px 1fr 1fr 10px;
+    -ms-grid-rows: 10px 1fr 1fr 1fr 10px;
+        grid-template-rows: 10px 1fr 1fr 1fr 10px;
+  }
+  .card-1 {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .card-2 {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .card-3 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .card-4 {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 5;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .card-5 {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 5;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    -ms-grid-columns: 10px 1fr 10px;
+        grid-template-columns: 10px 1fr 10px;
+    -ms-grid-rows: 10px 1fr 1fr 1fr 1fr 1fr 10px;
+        grid-template-rows: 10px 1fr 1fr 1fr 1fr 1fr 10px;
+  }
+  .card-3 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .card-1 {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    background: #2bcbba;
+  }
+  .card-2 {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 5;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    background: #badbff;
+  }
+  .card-4 {
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 6;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .card-5 {
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 7;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
 /*# sourceMappingURL=style.css.map */

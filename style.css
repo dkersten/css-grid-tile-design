@@ -255,6 +255,10 @@ main {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.overlay button.closeBtn:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 900px) {
   main {
     -ms-grid-columns: 10px 1fr 1fr 10px;

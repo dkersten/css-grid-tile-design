@@ -226,10 +226,9 @@ main {
 
 .overlay-container {
   max-width: 968px;
-  min-height: 360px;
+  min-height: 200px;
   background: red;
-  -ms-flex-preferred-size: 98%;
-      flex-basis: 98%;
+  width: 98%;
   position: relative;
   padding: 3.5rem 1.5rem 1.5rem;
 }

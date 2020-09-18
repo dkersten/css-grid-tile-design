@@ -227,20 +227,32 @@ main {
 .overlay-container {
   max-width: 968px;
   min-height: 200px;
-  background: red;
   width: 98%;
   position: relative;
   padding: 3.5rem 1.5rem 1.5rem;
 }
 
+.overlay-content * {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.overlay-content h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: #E6F4F1;
+  text-align: center;
+}
+
 .overlay button.closeBtn {
-  position: absolute;
+  position: fixed;
   top: 15px;
   right: 20px;
   background: none;
   color: #E6F4F1;
   border: 1px solid #E6F4F1;
   padding: .25rem .75rem;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media only screen and (max-width: 900px) {
